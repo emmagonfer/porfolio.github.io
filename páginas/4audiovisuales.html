@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Proyectos</title>
+    <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/svg" href="../img/logo.svg">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo-principal">
+            <img src="../img/logo.svg" alt="Logo Gonfer">
+        </a>
+
+        <div class="menu-btn" id="menuBtn">≡</div>
+
+        <aside class="menu-lateral" id="sideMenu">
+            <div class="close-btn" id="closeBtn">×</div>
+            <nav class="nav-lateral">
+                <ul>
+                    <li><a href="../index.html">HOME__</a></li>
+                    <li>
+                        <a href="1proyectos.html">PROYECTOS__</a>
+                        <ul class="sub-menu">
+                            <li><a href="2fotos.html">FOTO</a></li>
+                            <li><a href="3identidadgrafica.html">IDENTIDAD GRÁFICA</a></li>
+                            <li><a href="4audiovisuales.html">AUDIOVISUALES</a></li>
+                            <li><a href="5tresd.html">3D</a></li>
+                            <li><a href="6editorial.html">EDITORIAL</a></li>
+                            <li><a href="7ilustracion.html">ILUSTRACIÓN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="8sobremi.html">SOBRE MI__</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </nav>
+
+    <section class="encabezado-proyectos">
+        <h1 class="titulo-principal">AUDIOVISUALES__</h1>
+        <nav class="menu-categorias">
+            <ul>
+                <li><a href="2fotos.html">FOTO</a></li>
+                <li><a href="3identidadgrafica.html" >IDENTIDAD GRÁFICA</a></li>
+                <li><a href="4audiovisuales.html" class="active">AUDIOVISUALES</a></li>
+                <li><a href="5tresd.html">3D</a></li>
+                <li><a href="6editorial.html">EDITORIAL</a></li>
+                <li><a href="7ilustracion.html">ILUSTRACIÓN</a></li>
+                <li><a href="1proyectos.html">VER TODO</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="galeria-proyectos">
+        <div class="columna-portfolio">
+
+            <a href="#" class="item-proyecto" data-project-id="madrid-fashion-week">
+                <img src="../img/ANIMACIÓN/madrid fashion week/primera foto.png" alt="fashion week">
+                <p>MADRID FASHION WEEK</p>
+            </a>
+
+            <a href="#" class="item-proyecto" data-project-id="happier-than-ever">
+                <img src="../img/ANIMACIÓN/billie/primera foto.png" alt="Happier than ever">
+                <p>HAPPIER THAN EVER | BILLIE EILISH</p>
+            </a>
+
+            <a href="#" class="item-proyecto" data-project-id="carusos-animacion">
+                <img src="../img/ANIMACIÓN/carusos animación/primera foto.png" alt="carusos animacion">
+                <p>CARUSOS | MARCA ITALIANA</p>
+            </a>
+
+            <a href="#" class="item-proyecto" data-project-id="animacion-abstracta">
+                <img src="../img/ANIMACIÓN/animacion abstracta/primera foto.png" alt="animacion abstracta">
+                <p>ANIMACIÓN ABSTRACTA</p>
+            </a>
+        </div>
+
+        <div class="columna-portfolio derecha">
+            <a href="#" class="item-proyecto" data-project-id="e-ese-days">
+                <img src="../img/ANIMACIÓN/esdays/primera foto .png" alt="esdays">
+                <p>E ESE DAYS</p>
+            </a>
+
+            <a href="#" class="item-proyecto" data-project-id="rotoscopia">
+                <img src="../img/ANIMACIÓN/rotoscopia/primera foto.png" alt="rotoscopia">
+                <p>ROTOSCOPIA | REGRESO AL FUTURO</p>
+            </a>
+
+            <a href="#" class="item-proyecto" data-project-id="animacion-collage">
+                <img src="../img/ANIMACIÓN/collage animacion/primera foto.png" alt="collage">
+                <p>ANIMACIÓN COLLAGE</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contenido">
+            <p class="handle">● @GONFER__</p>
+            <nav class="redes">
+                <a href="https://www.linkedin.com/in/emma-gonz%C3%A1lez-fern%C3%A1ndez-359959333/">LINKEDIN ↗</a>
+                <span class="separador">|</span>
+                <a href="https://www.instagram.com/gonfer__/">INSTAGRAM ↗</a>
+                <span class="separador">|</span>
+                <a href="#">↑</a>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        
+        <div class="modal-inner">
+            <h2 id="modalProjectTitle">TÍTULO DEL PROYECTO</h2>
+            
+            <div class="carousel-container">
+                <div class="arrow left" id="prevBtn">&#10094;</div>
+                <div class="main-image-wrapper">
+                    <img id="modalImg" src="" alt="Main Project Image">
+                </div>
+                <div class="arrow right" id="nextBtn">&#10095;</div>
+            </div>
+
+            <div class="modal-info-bar">
+                <div class="info-left">
+                    <p id="modalDescription">DESCRIPCIÓN...</p>
+                </div>
+                <div class="separator"></div>
+                <div class="info-right">
+                    <p><strong>PROGRAMA</strong></p>
+                    <p id="modalProgram">PROGRAMA...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
