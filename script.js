@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'madrid-fashion-week': {
             title: 'MADRID FASHION WEEK',
-            description: 'Realizadas para el desfile de la ESD durante la Madrid Fashion Week, creamos una serie de animaciones reactivas a la música para proyectarlas de fondo durante la pasarela de los modelos. Para realizarlas se tuvo en cuenta la estética de dichos diseñadores, para que encajara todo lo mejor posible',
+            description: 'Realizadas para el desfile de la ESD durante la Madrid Fashion Week, creamos en grupo una serie de animaciones reactivas a la música para proyectarlas de fondo durante la pasarela de los modelos. Para realizarlas se tuvo en cuenta la estética de dichos diseñadores, para que encajara todo lo mejor posible',
             program: 'AFTER EFFECTS/ RESOLUME ARENA',
             images: [
                 '../img/ANIMACIÓN/madrid fashion week/1.mp4',
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'teatros-canal': {
             title: 'REDISEÑO TEATROS DEL CANAL',
-            description: 'El rediseño consistia en la modernización en la web, logo y en general toda la estética de los teatros del canal. optamos por unos colores más llamativos para captar la atención del público, así como por una estética mucho más moderna, conectando más con las nuevas generaciones. Se usan 4 colores principales, representando las versas salas del teatro. También se creó una tipografía y logo propio, siguiendo una retícula curva.',
+            description: 'El rediseño consistía en un trabajo grupal en el que debíamos llevar a cabo la modernización en la web, logo y en general toda la estética de los teatros del canal. optamos por unos colores más llamativos para captar la atención del público, así como por una estética mucho más moderna, conectando más con las nuevas generaciones. Se usan 4 colores principales, representando las versas salas del teatro. También se creó una tipografía y logo propio, siguiendo una retícula curva.',
             program: 'ILLUSTRATOR/ PHOTOSHOP/ INDESING/ AFTER EFFECTS',
             images: ['../img/IDENTIDAD GRÁFICA/teatros del canal/primera foto.png',
                 '../img/IDENTIDAD GRÁFICA/teatros del canal/1.png',
