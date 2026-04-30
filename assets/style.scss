@@ -84,7 +84,7 @@ a {
     padding: 30px 50px;
     justify-content: space-between;
 
-    background-image: url('img/home/fondo-pajaro.JPG');
+    background-image: url('../../img/home/fondo-pajaro.JPG');
     background-repeat: no-repeat;
 
     background-size: cover%; 
@@ -609,3 +609,17 @@ footer {
         flex: auto;
     }
 }
+
+.circulo-azul {
+            width: 30px;
+            height: 30px;
+            background-color: #0055ff;
+            border-radius: 50%;
+            position: fixed; /* Fixed lo mantiene en pantalla incluso si hay scroll */
+            top: 0;
+            left: 0;
+            pointer-events: none; /* ¡CRUCIAL! Evita que el círculo bloquee tus clics en otros elementos */
+            z-index: 9999; /* Lo mantiene por encima de todo */
+        }
+
+        

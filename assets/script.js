@@ -10,10 +10,8 @@ closeBtn.onclick = () => {
     sideMenu.classList.remove('active');
 }
 
-// Esperamos a que todo el HTML esté cargado antes de ejecutar nada
 document.addEventListener('DOMContentLoaded', () => {
 
-// 1. Define los datos de tus proyectos
     const projectData = {
         'cata-la-lata': {
             title: 'CATA LA LATA',
@@ -346,7 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // 2. Variables y elementos del DOM
     let currentProjectData = null;
     let currentImageIndex = 0;
 
@@ -360,52 +357,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
-    // Comprobamos de que el modal existe en esta página antes de continuar
     if (!modal) return; 
 
-    // 3. Funciones
 function updateModalContent() {
         if (!currentProjectData || !currentProjectData.images || currentProjectData.images.length === 0) return;
         
         const mediaPath = currentProjectData.images[currentImageIndex];
         
-        // 1. ¿Es vídeo o foto?
         if (mediaPath.toLowerCase().endsWith('.mp4')) {
-            // ES UN VÍDEO 🎬
-            modalImg.style.display = 'none'; // Ocultamos la foto
+        
+            modalImg.style.display = 'none';
             
-            // Buscamos si ya creamos la etiqueta de vídeo antes
             let videoEl = document.getElementById('modalVideo');
             if (!videoEl) {
-                // Si no existe, la creamos
                 videoEl = document.createElement('video');
                 videoEl.id = 'modalVideo';
-                videoEl.controls = true;  // Muestra la barra de play/pausa
-                videoEl.autoplay = true;  // Que empiece solo
-                videoEl.loop = true;      // Que se repita en bucle
-                videoEl.muted = true;     // Que empiece sin sonido (mejor para la UX)
+                videoEl.controls = true;  
+                videoEl.autoplay = true;  
+                videoEl.loop = true;      
+                videoEl.muted = true;     
                 
-                // Lo metemos justo después de la imagen
                 modalImg.parentNode.insertBefore(videoEl, modalImg.nextSibling);
             }
             
             videoEl.src = mediaPath;
-            videoEl.style.display = 'block'; // Mostramos el vídeo
-            videoEl.play();                  // Le damos al play
+            videoEl.style.display = 'block'; 
+            videoEl.play();                  
             
         } else {
-            // ES UNA FOTO 📷
             let videoEl = document.getElementById('modalVideo');
             if (videoEl) {
-                videoEl.style.display = 'none'; // Ocultamos el vídeo
-                videoEl.pause();                // Lo pausamos por si estaba sonando
+                videoEl.style.display = 'none'; 
+                videoEl.pause();                
             }
             
             modalImg.src = mediaPath;
-            modalImg.style.display = 'block'; // Mostramos la foto
+            modalImg.style.display = 'block'; 
         }
 
-        // 2. Actualizamos los textos
         modalTitle.innerText = currentProjectData.title || '';
         modalDesc.innerText = currentProjectData.description || '';
         modalProgram.innerText = currentProjectData.program || '';
@@ -414,7 +403,6 @@ function updateModalContent() {
     function closeModal() {
         modal.classList.remove('active');
         
-        // Si hay un vídeo reproduciéndose, lo apagamos al cerrar la ventana
         let videoEl = document.getElementById('modalVideo');
         if (videoEl) {
             videoEl.pause();
@@ -439,22 +427,19 @@ function updateModalContent() {
         updateModalContent();
     }
 
-    // 4. Asignar los eventos de CLIC a las imágenes
     projectLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault(); // ¡ESTO ES LO QUE FRENA EL SALTO!
+            event.preventDefault(); 
 
             const projectId = link.getAttribute('data-project-id');
             
-            // Verificamos si el ID existe en tus datos
             if (projectData[projectId]) {
                 currentProjectData = projectData[projectId];
 
-                // Verificamos si el proyecto tiene al menos 1 imagen
                 if (currentProjectData.images && currentProjectData.images.length > 0) {
                     currentImageIndex = 0; 
                     updateModalContent();
-                    modal.classList.add('active'); // Mostramos el modal
+                    modal.classList.add('active'); 
                 } else {
                     alert("Aún no has metido imágenes para este proyecto en el JavaScript.");
                 }
@@ -464,7 +449,6 @@ function updateModalContent() {
         });
     });
 
-    // 5. Controles del Modal
     if (closeBtnModal) closeBtnModal.addEventListener('click', closeModal);
     if (prevBtn) prevBtn.addEventListener('click', prevImage);
     if (nextBtn) nextBtn.addEventListener('click', nextImage);
@@ -475,4 +459,63 @@ function updateModalContent() {
         }
     });
 
+});
+
+
+gsap.set(".circulo-azul", { xPercent: -50, yPercent: -50 });
+
+const moverX = gsap.quickTo(".circulo-azul", "x", { duration: 0.4, ease: "power3.out" });
+const moverY = gsap.quickTo(".circulo-azul", "y", { duration: 0.4, ease: "power3.out" });
+
+window.addEventListener("mousemove", (evento) => {
+    moverX(evento.clientX);
+    moverY(evento.clientY);
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const proyectos = document.querySelectorAll(".contenedor-grid a");
+
+proyectos.forEach((proyecto) => {
+    gsap.from(proyecto, {
+        y: 80,
+        opacity: 0, 
+        scrollTrigger: {
+            trigger: proyecto, 
+            start: "top 90%",
+            end: "top 40%",  
+            scrub: 1,         
+        }
+    });
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+const items = document.querySelectorAll('.item-proyecto');
+
+items.forEach((item, index) => {
+    gsap.from(item, {
+        y: 100,            
+        opacity: 0,        
+        duration: 1,
+        scrollTrigger: {
+            trigger: item,
+            start: "top 95%", 
+            end: "top 30%",   
+            scrub: 1.5,       
+        }
+    });
+});
+
+const columnaDerecha = document.querySelectorAll('.columna-portfolio.derecha .item-proyecto');
+
+columnaDerecha.forEach((item) => {
+    gsap.to(item, {
+        y: -30, 
+        scrollTrigger: {
+            trigger: item,
+            scrub: 2
+        }
+    });
 });
