@@ -209,7 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Se diseñaron 12 pictogramas sobre salud mental con una estética cuadrada, usando una retícula de líneas horizontales, verticales y a 45°. Las formas se construyeron principalmente con rectángulos y círculos, asegurando que todos encajaran en un mismo cuadrado base. Tras ajustar problemas de legibilidad en tamaños pequeños y en negativo, se definió el estilo final. Se eligió la tipografía Avenir por su coherencia geométrica y se propusieron aplicaciones como carteles, patrones y una app personalizada, buscando una función más allá de lo estético. Los pictogramas representan: narcisismo, miedo a hablar en público, insomnio, bipolaridad, problemas alimentarios, conciencia de la salud mental, depresión, autolesiones, enfado, ansiedad, esquizofrenia y miedo.',
             program: 'ILLUSTRATOR',
             images: ['../img/IDENTIDAD GRÁFICA/pictogramas salud mental/primera foto.jpg',
-                '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/1.jpg',
                 '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/2.jpg',
                 '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/3.png',
                 '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/4.png',
