@@ -459,7 +459,6 @@ function updateModalContent() {
     });
 
 });
-<<<<<<< HEAD:assets/script.js
 
 
 gsap.set(".circulo-azul", { xPercent: -50, yPercent: -50 });
@@ -519,8 +518,3 @@ columnaDerecha.forEach((item) => {
         }
     });
 });
-<<<<<<< HEAD
-=======
->>>>>>> e39651f84cd83a401cf803b2baba7cd8978e617f:script.js
-=======
->>>>>>> 2dd5d32c560c0de6038aaebab79f30009f735707
