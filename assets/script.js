@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'madrid-fashion-week': {
             title: 'MADRID FASHION WEEK',
-            description: 'Realizadas para el desfile de la ESD durante la Madrid Fashion Week, creamos una serie de animaciones reactivas a la música para proyectarlas de fondo durante la pasarela de los modelos. Para realizarlas se tuvo en cuenta la estética de dichos diseñadores, para que encajara todo lo mejor posible',
+            description: 'Realizadas para el desfile de la ESD durante la Madrid Fashion Week, creamos en grupo una serie de animaciones reactivas a la música para proyectarlas de fondo durante la pasarela de los modelos. Para realizarlas se tuvo en cuenta la estética de dichos diseñadores, para que encajara todo lo mejor posible',
             program: 'AFTER EFFECTS/ RESOLUME ARENA',
             images: [
                 '../img/ANIMACIÓN/madrid fashion week/1.mp4',
@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Estudio fotográfico centrado en capturar el dinamismo, la estela del tiempo y la sensación de velocidad.',
             program: 'CAMARA',
             images: ['../img/foto/3/primera foto.JPG',
-                '../img/foto/3/1.JPG',
                 '../img/foto/3/2.JPG',
                 '../img/foto/3/3.JPG',
+                '../img/foto/3/4.JPG',
             ]
         },
         'capturar-momento': {
@@ -209,7 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Se diseñaron 12 pictogramas sobre salud mental con una estética cuadrada, usando una retícula de líneas horizontales, verticales y a 45°. Las formas se construyeron principalmente con rectángulos y círculos, asegurando que todos encajaran en un mismo cuadrado base. Tras ajustar problemas de legibilidad en tamaños pequeños y en negativo, se definió el estilo final. Se eligió la tipografía Avenir por su coherencia geométrica y se propusieron aplicaciones como carteles, patrones y una app personalizada, buscando una función más allá de lo estético. Los pictogramas representan: narcisismo, miedo a hablar en público, insomnio, bipolaridad, problemas alimentarios, conciencia de la salud mental, depresión, autolesiones, enfado, ansiedad, esquizofrenia y miedo.',
             program: 'ILLUSTRATOR',
             images: ['../img/IDENTIDAD GRÁFICA/pictogramas salud mental/primera foto.jpg',
-                '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/1.jpg',
                 '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/2.jpg',
                 '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/3.png',
                 '../img/IDENTIDAD GRÁFICA/pictogramas salud mental/4.png',
@@ -222,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'portada-disco': {
             title: 'PORTADA DISCO | BEATLES',
-            description: 'El diseño presenta una cinta de vídeo que recorre la composición de izquierda a derecha mostrando los rostros de The Beatles, simbolizando su trayectoria continua y atemporal; a nivel técnico, se utilizó un degradado de azul a blanco para el fondo, la cinta se construyó con rectángulos negros y los agujeros mediante buscatrazos, mientras que las caras se editaron a partir de fotos reales con calco de imagen en blanco y negro, añadiendo además efectos de ruido y polvo para un acabado envejecido. La segunda propuesta es más sencilla y se centra en el nombre de la banda y la letra de la canción, incorporando partituras sutiles en el fondo y manteniendo el mismo estilo visual, dando mayor protagonismo al nombre y añadiendo un toque manuscrito junto con información adicional, sin perder los efectos de textura y antigüedad.',
+            description: 'El diseño presenta una cinta de vídeo que recorre la composición de izquierda a derecha mostrando los rostros de The Beatles, simbolizando su trayectoria continua y atemporal. A nivel técnico, se utilizó un degradado de azul a blanco para el fondo, la cinta se construyó con rectángulos negros y los agujeros mediante buscatrazos, mientras que las caras se editaron a partir de fotos reales con calco de imagen en blanco y negro, añadiendo además efectos de ruido y polvo para un acabado envejecido. La propuesta del reverso es más sencilla y se centra en el nombre de la banda y la letra de la canción, incorporando partituras sutiles en el fondo y manteniendo el mismo estilo visual, dando mayor protagonismo al nombre y añadiendo un toque manuscrito junto con información adicional, sin perder los efectos de textura y antigüedad.',
             program: 'ILLUSTRATOR/ PHOTOSHOP',
             images: ['../img/IDENTIDAD GRÁFICA/beatles/Portada now and then_Emma Gonzalez 1.jpg',
                 '../img/IDENTIDAD GRÁFICA/beatles/Contraportada los beatles_Emma Gonzalez 2.jpg',
@@ -269,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'teatros-canal': {
             title: 'REDISEÑO TEATROS DEL CANAL',
-            description: 'El rediseño consistia en la modernización en la web, logo y en general toda la estética de los teatros del canal. optamos por unos colores más llamativos para captar la atención del público, así como por una estética mucho más moderna, conectando más con las nuevas generaciones. Se usan 4 colores principales, representando las versas salas del teatro. También se creó una tipografía y logo propio, siguiendo una retícula curva.',
+            description: 'El rediseño consistía en un trabajo grupal en el que debíamos llevar a cabo la modernización en la web, logo y en general toda la estética de los teatros del canal. optamos por unos colores más llamativos para captar la atención del público, así como por una estética mucho más moderna, conectando más con las nuevas generaciones. Se usan 4 colores principales, representando las versas salas del teatro. También se creó una tipografía y logo propio, siguiendo una retícula curva.',
             program: 'ILLUSTRATOR/ PHOTOSHOP/ INDESING/ AFTER EFFECTS',
             images: ['../img/IDENTIDAD GRÁFICA/teatros del canal/primera foto.png',
                 '../img/IDENTIDAD GRÁFICA/teatros del canal/1.png',
@@ -460,6 +459,7 @@ function updateModalContent() {
     });
 
 });
+<<<<<<< HEAD:assets/script.js
 
 
 gsap.set(".circulo-azul", { xPercent: -50, yPercent: -50 });
@@ -519,3 +519,5 @@ columnaDerecha.forEach((item) => {
         }
     });
 });
+=======
+>>>>>>> e39651f84cd83a401cf803b2baba7cd8978e617f:script.js
